@@ -1,1 +1,1 @@
-worker: python mainy.py
+worker: python3 bot.py
