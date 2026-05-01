@@ -11,8 +11,14 @@ load_dotenv()
 
 # قراءة البيانات من البيئة (أكثر أماناً)
 TELEGRAM_TOKEN = os.getenv('BOT_TOKEN')
-INSTA_USER = os.getenv('INSTA_USER')
-INSTA_PASS = os.getenv('INSTA_PASS')
+import os
+from dotenv import load_dotenv
+
+load_dotenv() # هذه الوظيفة تفتح ملف .env وتقرأ ما بداخله
+
+INSTA_USER = os.getenv('INSTA_USER') # سيأخذ اسم الحساب من الملف
+INSTA_PASS = os.getenv('INSTA_PASS') # سيأخذ كلمة السر من الملف
+
 
 # تهيئة Instaloader
 L = instaloader.Instaloader()
