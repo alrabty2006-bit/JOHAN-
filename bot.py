@@ -15,7 +15,7 @@ INSTA_USER = os.getenv('INSTA_USER')
 INSTA_PASS = os.getenv('INSTA_PASS')
 
 # تهيئة Instaloader
-L = instaloader.Instaloader(shortcode_to_mediaid=True, cache_path=None)
+L = instaloader.Instaloader()
 
 def smart_login():
     session_file = f"session-{INSTA_USER}"
